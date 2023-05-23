@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename='joshuatobackportfolio'>
+  <BrowserRouter basename='jt-portfolio'>
     <React.StrictMode>
       <App />
     </React.StrictMode>
