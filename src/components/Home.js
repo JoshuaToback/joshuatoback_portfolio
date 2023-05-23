@@ -13,7 +13,9 @@ function Home() {
     <>
       <Navbar />
       <Container fluid>
-          <Hero />
+          <section id="home">
+            <Hero />
+          </section>
           <section id="about">
               <About />
           </section>

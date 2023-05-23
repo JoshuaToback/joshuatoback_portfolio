@@ -3,14 +3,20 @@ import { SocialIcon } from 'react-social-icons'
 
 function Footer() {
   return (
-    <footer>
+    <center className='footer'>
       <h2>Developed by Joshua Toback</h2>
-      <div>
-      <SocialIcon url="https://linkedin.com/in/joshua-toback" />
-      <SocialIcon url='https://twitter.com/joshuatoback' />
-      <SocialIcon url='https://github.com/JoshuaToback' />
+      <div className='footerIcons'>
+      <div className='footerIcon'>
+        <SocialIcon url="https://linkedin.com/in/joshua-toback" />
       </div>
-    </footer>
+      <div className='footerIcon'>
+        <SocialIcon url='https://twitter.com/joshuatoback' />
+      </div>
+      <div className='footerIcon'>
+        <SocialIcon url='https://github.com/JoshuaToback' />
+      </div>
+      </div>
+    </center>
   )
 }
 

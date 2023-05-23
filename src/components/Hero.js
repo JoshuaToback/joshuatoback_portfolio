@@ -31,12 +31,14 @@ function Hero() {
 
       <div className="hero-stack">
         <h3>Tech Stack</h3>
-        <img src={HTML} alt="HTML" />
-        <img src={CSS} alt="CSS" />
-        <img src={JS} alt="JavaScript" />
-        <img src={Boot} alt="Bootstrap" />
-        <img src={Node} alt="Node" />
-        <img src={ReactLogo} alt="React" />
+        <div className="hero-stack-items">
+          <img src={HTML} alt="HTML" />
+          <img src={CSS} alt="CSS" />
+          <img src={JS} alt="JavaScript" />
+          <img src={Boot} alt="Bootstrap" />
+          <img src={Node} alt="Node" />
+          <img src={ReactLogo} alt="React" />
+        </div>
       </div>
       <Link smooth spy to="projects">
         <button className="projectsBtn">PROJECTS</button>
