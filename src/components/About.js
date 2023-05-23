@@ -1,14 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-import Headshot from "../images/headshot.png"
+import about from "../images/about.jpg"
 
 function About() {
   return (
     <Container className="about">
       <img
         className="profile-picture"
-        src={Headshot}
+        src={about}
         alt="Profile"
       ></img>
       <div className="about-me-content">

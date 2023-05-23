@@ -50,6 +50,10 @@ function Contact() {
           Submit Form
         </button>
       </form>
+
+      <h2>Want to discuss further?</h2>
+      <p>Contact my email directly instead!</p>
+      <a href="mailto:joshuatobackdev@gmail.com">Email Me!</a>
     </Container>
   );
 }

@@ -15,20 +15,20 @@ const projects = [
   {
     title: "FullStacks Cafe",
     src: FullStacks,
-    desc: "Front end marketplace for a breakfast restaraunt.",
+    desc: "Fullstacks Cafe is a full stack, MVC dual application that allows potential customers of a restaraunt to select items from a menu, review and place orders that are stored locally. It also allows employees to access a password-locked CLI that can adjust prices, menu options, and review orders.",
     github: "https://github.com/JoshuaToback/FullStacks-Cafe",
     live: "https://fullstackscafe.herokuapp.com/home.html",
-    tech: [HTML, CSS, JS, Boot, Node]
+    tech: [HTML, CSS, JS, Boot, Node],
   },
 
   {
     title: "Helmsdale Media",
     src: Helmsdale,
-    desc: "Front end marketplace for a digitization service and publisher.",
+    desc: "Helmsdale Media is a digital storefront built for customers to contact the owner and discuss the digitization of old footage, photos, and other vintage video/photos.",
     github: "https://github.com/JoshuaToback/helmsdalemedia",
     live: "https://www.helmsdalemedia.com/",
-    tech: [HTML, CSS, JS, ReactLogo]
-  }
+    tech: [HTML, CSS, JS, ReactLogo],
+  },
 ];
 
 function Projects() {

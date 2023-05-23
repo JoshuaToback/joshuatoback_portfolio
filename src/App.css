@@ -1,11 +1,9 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-
   transition: all 0.3s;
   /* debugging  */
   /* border: 1px solid red; */
-  
   /* Default Font  */
   font-family: 'Barlow', sans-serif;
 }
@@ -19,7 +17,6 @@ body {
   --accent-color: #1596c9;
   --neutral-color: #000000;
 }
-
 
 ul {
   display: flex;
@@ -71,8 +68,6 @@ button:focus {
   outline: none;
   box-shadow: 0 0 0 2px #4c4faf;
 }
-
-
 
 section {
   display: grid;
@@ -213,7 +208,6 @@ section {
   color: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
 }
 
 .profile-picture {
@@ -244,16 +238,17 @@ section {
 .projects {
   display: flex;
   flex-direction: column;
-  
 }
 
-.projects h2 {
+.projects h3 {
   font-size: 45px;
 }
 
-
 .projects p {
-  font-size: 20px;
+  font-size: 25px;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
 }
 
 .projectProp {
@@ -307,6 +302,10 @@ section {
 
 .contact p {
   font-size: 25px;
+}
+
+.contact a {
+  text-decoration: none;
 }
 
 /* Form container */
@@ -380,68 +379,75 @@ section {
   border-radius: 100px;
 }
 
-/* Mobile responsiveness */
-
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .nav__container__actions {
-    padding-left: 10px;
+    padding-left: 20px;
   }
-  
+
   .hero {
+    font-size: 24px;
     padding: 20px;
   }
-  
-  .hero-links {
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .hero-stack {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+
+  .hero-social {
+    padding: 10px;
+    margin: 5px;
   }
 
-  .hero-stack-items {
-    display: flex;
-    flex-direction: row;
+  .hero-social img {
+    height: 100px;
+    width: 100px;
   }
-  
+
   .hero-stack img {
     width: 60px;
     height: 60px;
   }
-  
+
   .about {
     padding: 20px;
   }
-  
-  .about-me-content {
-    text-align: left;
+
+  .about-me-title {
+    font-size: 28px;
   }
 
-  
-
-  .projects {
-    margin-top: 50px;
-    padding: 20px;
+  .about-me-text {
+    font-size: 18px;
   }
-  
+
+  .projects h2 {
+    font-size: 32px;
+  }
+
+  .projects p {
+    font-size: 16px;
+  }
+
   .projectImage {
-    width: 100%;
+    max-width: 90%;
   }
-  
-  .projectButtons {
-    flex-direction: column;
-    align-items: center;
+
+  .projectTech img {
+    width: 60px;
+    height: 60px;
   }
-  
-  .projectButtons a {
+
+  .contact {
     padding: 10px;
   }
-  
-  .contact {
-    padding: 20px;
+
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    max-width: 300px;
+    font-size: 14px;
   }
 }
