@@ -1,8 +1,8 @@
 {
-  "name": "joshuatoback-portfolio",
+  "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joshuatoback.github.io/joshuatoback-portfolio",
+   "homepage": "https://JoshuaToback.github.io/joshuatobackportfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
