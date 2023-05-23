@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5226b21.css",
+    "main.js": "/static/js/main.d87346f1.js",
+    "static/media/headshot.png": "/static/media/headshot.2257cd7bd1a7f5bd002b.png",
+    "static/media/HelmsdaleMedia.png": "/static/media/HelmsdaleMedia.bb57c2bbce2e07f03ec3.png",
+    "static/media/fullstacks.png": "/static/media/fullstacks.398c91286d67ae818735.png",
+    "static/media/react.png": "/static/media/react.8a6fc0a24a800d1e0f4a.png",
+    "static/media/node.png": "/static/media/node.007e99f68b718e476aba.png",
+    "static/media/js.png": "/static/media/js.57a41cb6e1dfb5a9406b.png",
+    "static/media/css.png": "/static/media/css.0a3a96f96228e27a4a5f.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.268c4375260420e8d982.png",
+    "index.html": "/index.html",
+    "static/media/html.svg": "/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "main.c5226b21.css.map": "/static/css/main.c5226b21.css.map",
+    "main.d87346f1.js.map": "/static/js/main.d87346f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5226b21.css",
+    "static/js/main.d87346f1.js"
+  ]
+}
