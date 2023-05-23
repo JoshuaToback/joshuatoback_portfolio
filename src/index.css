@@ -7,8 +7,19 @@
   /* border: 1px solid red; */
   
   /* Default Font  */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
+
+body {
+  background-color: var(--primary-color);
+}
+
+:root {
+  --primary-color: #311B92;
+  --accent-color: #1596c9;
+  --neutral-color: #000000;
+}
+
 
 ul {
   display: flex;
@@ -28,7 +39,36 @@ li:hover {
 
 .active {
   font-weight: bold;
-  text-decoration: green;
+  text-decoration: var(--accent-color);
 }
 
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: #000;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4c4faf;
+}
 

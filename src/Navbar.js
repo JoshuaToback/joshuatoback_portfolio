@@ -4,7 +4,8 @@ import { Link } from "react-scroll";
 function Navbar() {
   return (
     <header className="nav">
-      <nav className="nav__container__actions">
+      <h2>Joshua Toback</h2>
+      <nav className="nav__container nav__container__actions">
         <ul>
           <li>
             <Link activeClass="active" smooth spy to="about">
