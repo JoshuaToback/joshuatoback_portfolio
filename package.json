@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-   "homepage": "https://JoshuaToback.github.io/jt-portfolio",
+  "homepage": "https://JoshuaToback.github.io/jt-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@wixc3/react-board": "^2.2.0",
     "gh-pages": "^5.0.0"
   }
 }

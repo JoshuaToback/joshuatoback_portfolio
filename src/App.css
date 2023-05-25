@@ -70,9 +70,6 @@ button:focus {
 }
 
 section {
-  display: grid;
-  place-items: center;
-  height: 100vh;
   font-size: 32px;
   font-weight: bold;
 }
@@ -197,12 +194,16 @@ section {
   transform: scale(1.1);
 }
 
+.hero-btns button {
+  margin: 20px;
+}
+
 /* About */
 
 .about {
   display: flex;
   align-items: center;
-  gap: 20px;
+  
   padding: 40px;
   background-color: var(--accent-color);
   color: white;
@@ -289,10 +290,11 @@ section {
 /* Contact Page */
 
 .contact {
-  background-color: var(--primary-color);
-  padding: 20px;
+  background-color: silver;
+  margin-bottom: 20px;
+  padding: 30px;
   border-radius: 20px;
-  color: white;
+  color: var(--accent-color);
   text-align: center;
 }
 
@@ -379,7 +381,7 @@ section {
   border-radius: 100px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .nav__container__actions {
     padding-left: 20px;
   }
@@ -410,10 +412,17 @@ section {
 
   .about-me-title {
     font-size: 28px;
+    text-align: center;
   }
 
   .about-me-text {
-    font-size: 18px;
+    font-size: 14px;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
   }
 
   .projects h2 {
@@ -449,5 +458,20 @@ section {
   .contact-form textarea {
     max-width: 300px;
     font-size: 14px;
+  }
+
+  .nav__container {
+    flex-flow: column;
+    align-items: flex-end;
+  }
+
+  .nav__container li {
+    font-size: 11px;
+  }
+  
+  .nav__container__actions {
+    padding: 0;
+    margin-top: 10px;
+    width: 100%;
   }
 }

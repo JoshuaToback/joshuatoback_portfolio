@@ -8,7 +8,19 @@ import Boot from "../images/bootstrap.png";
 import Node from "../images/node.png";
 import ReactLogo from "../images/react.png";
 import { Link } from "react-scroll";
-import Headshot from "../images/headshot.png"
+import Headshot from "../images/headshot.png";
+
+const resumePDF = "http://localhost:3000/JoshuaToback_Resume.pdf";
+
+  const downloadFileAtURL = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
 
 function Hero() {
   return (
@@ -16,11 +28,7 @@ function Hero() {
       <div className="hero-info">
         <h1>Joshua Toback</h1>
         <h2>Front End React Developer</h2>
-        <img
-        className="profile-picture"
-        src={Headshot}
-        alt="Profile"
-      ></img>
+        <img className="profile-picture" src={Headshot} alt="Profile"></img>
         <p>
           Hello, I'm Joshua Toback. I'm a driven and creative Front-End React
           Developer based in Studio City, California.
@@ -47,9 +55,12 @@ function Hero() {
           <img src={ReactLogo} alt="React" />
         </div>
       </div>
-      <Link smooth spy to="projects">
-        <button className="projectsBtn">PROJECTS</button>
-      </Link>
+      <div className="hero-btns">
+        <Link smooth spy to="projects">
+          <button className="projectsBtn">PROJECTS</button>
+        </Link>
+        <button className="projectsBtn" onClick={()=> downloadFileAtURL(resumePDF)}>DOWNLOAD RESUME</button>
+      </div>
     </center>
   );
 }
